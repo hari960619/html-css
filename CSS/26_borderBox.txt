@@ -1,0 +1,41 @@
+The box-sizing property in CSS is used to define how the total width and height of an element are calculated, specifically regarding the content, padding, and border.
+
+When you use the default box-sizing: content-box;, the width and height of an element are calculated based only on the content area, excluding padding and border. In other words, if you set the width of an element to 100 pixels, any additional padding or border will increase the total width beyond 100 pixels.
+
+However, when you use box-sizing: border-box;, the width and height of the element include the content, padding, and border within the specified width and height values. This means that if you set the width of an element to 100 pixels with border-box, any padding or border added to the element will subtract from the content area rather than increasing the total width beyond 100 pixels. The content area will adjust to fit within the specified width.
+
+ <div class="content-box-example">
+    Content Box Example
+    <br>
+    I focus on the content only.
+</div>
+
+<div class="border-box-example">
+    Border Box Example
+    <br>
+    I include the content and padding in the box.
+</div>
+
+.content-box-example {
+  width: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  box-sizing: content-box;
+}
+
+.border-box-example {
+  width: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+In this example:
+
+The content-box-example div demonstrates the default behavior (box-sizing: content-box;). Its total width will be 100px (content width) + 20px (padding) + 4px (border) = 124px.
+
+The border-box-example div uses box-sizing: border-box;. 
+Despite having the same padding and border, its total width remains 100px, and the padding and border are included within the specified width.
+
+Using box-sizing: border-box; can simplify layout calculations, especially in responsive design, where elements need to be sized proportionally. 
+It helps maintain a more predictable layout, as padding and border values are contained within the specified width and height of an element.

@@ -1,0 +1,17 @@
+<button id="btn">Click Me</button>
+
+3 types of Button Clicked !!!!
+
+/* document.getElementById("btn").addEventListener("click", () => {
+    console.log("Button Clicked")
+}) */
+
+/* document.getElementById("btn").addEventListener("click", logMessage) */
+
+document.getElementById("btn").addEventListener("click", () => {
+    logMessage();
+})
+
+function logMessage() {
+    console.log("Message!!!!")
+}

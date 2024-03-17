@@ -1,0 +1,2 @@
+box-shadow:	Adds one or more shadows to an element
+text-shadow: Adds one or more shadows to a text

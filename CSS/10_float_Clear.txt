@@ -1,0 +1,57 @@
+float and clear property should be applied to the element and not the div. 
+
+<div id="floatOne">
+    <img class="withoutClear" src="./Images/Wallpaper03.jpg">
+    <h2 class="withoutClear"> Testing float Property</h2>
+    <br>
+    <br>
+    <p class="withoutClear">Float is a property that helps us move an element left or right.</p>
+    <br>
+    <p class="withoutClear">Just in case, inside a div we have two elements and we want both of them float on a side. </p>
+    <p class="withoutClear"> If we use float on both elements will sit side by side but not one below the other.</p>
+    <br>
+    <p class="withoutClear">We can be achieved using clear.</p>
+</div>
+
+<div id="floatTwo">
+    <img class="withClear" src="./Images/Wallpaper03.jpg">
+    <h2 class="withClear"> Testing float Property</h2>
+    <p class="withClear">Float is a property that helps us move an element left or right.</p>
+    <p class="withClear">Just in case, inside a div we have two elements and we want both of them float on a side. </p>
+    <p class="withClear"> If we use float on both elements will sit side by side but not one below the other.</p>
+    <p class="withClear">We can be achieved using clear.</p>
+</div>
+
+
+.withoutClear {
+  /* none is default */
+  float: none;
+  float: right;
+  float: left;
+}
+
+#floatOne {
+  border: 3.5px solid red;
+  overflow: auto;
+}
+
+#floatTwo {
+  border: 3.5px solid red;
+  overflow: auto;
+  margin: 5px 0;
+}
+
+#floatTwo img {
+  float: left;
+}
+
+#floatTwo .withClear {
+  clear: left;
+}
+
+img {
+  height: 250px;
+  width: 350px;
+}
+
+

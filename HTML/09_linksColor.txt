@@ -1,0 +1,29 @@
+<style>
+       a {
+           color: orangered;
+           background-color: transparent;
+           text-decoration: overline;
+       }
+       a:visited {
+           color: blue;
+           background-color: transparent;
+           text-decoration: none;
+       }
+       a:hover {
+           color: red;
+           background-color: transparent;
+           text-decoration: underline;
+       }
+       a:active {
+           color: yellow;
+           background-color: transparent;
+           text-decoration: underline;
+       }
+</style>
+
+<h1><a href="https://www.google.com" target="_blank">Google</a></h1>
+<h1><a href="https://www.googe.com" target="_blank">Netflix</a></h1>
+
+1) Here HTML recognizes the href value. Any href value that is same will be considered as visited when clicked once.
+2) Active is when we are clicking on it.
+ 

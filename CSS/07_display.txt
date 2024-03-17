@@ -1,0 +1,22 @@
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+
+
+div {
+  height: 250px;
+  width: 250px;
+  background-color: red;
+  margin: 5px;
+}
+
+#div1 {
+  /* Removes the Element Completely */
+  /* display: block; */
+  /* display: inline; */
+  /* display: none; */
+
+  /* Element is present but cannot be seen */
+  /* The space is still retained */
+  visibility: hidden;
+}

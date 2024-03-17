@@ -1,0 +1,26 @@
+<div id="dropDown">
+    <h1>Hover over Me</h1>
+    <div id="hoveredImg">
+        <img src="./Images/Wallpaper03.jpg" alt="">
+    </div>
+</div>
+
+
+#dropDown {
+  position: relative;
+}
+
+#hoveredImg {
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  display: none;
+}
+
+img {
+  width: 250px;
+}
+
+#dropDown:hover #hoveredImg {
+  display: block;
+}

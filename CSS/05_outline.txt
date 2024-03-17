@@ -1,0 +1,12 @@
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit quas voluptas molestiae eos! Expedita officia dolore quia impedit unde.</p>
+</div>
+
+div {
+  outline: 5px solid whitesmoke;
+  margin: 25px;
+  padding: 50px;
+  background: green;
+  outline-offset: -25px;
+  color: bisque;
+}

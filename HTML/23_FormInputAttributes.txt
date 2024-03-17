@@ -1,0 +1,76 @@
+Attribute: Description 
+ checked:	
+        Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")
+ disabled:	
+        Specifies that an input field should be disabled
+ max:	
+        Specifies the maximum value for an input field
+ maxlength:	
+        Specifies the maximum number of character for an input field
+ min:	
+        Specifies the minimum value for an input field
+ readonly:	
+        Specifies that an input field is read only (cannot be changed)
+ required:	
+        Specifies that an input field is required (must be filled out)
+ size:	
+        Specifies the width (in characters) of an input field
+ step:	
+        Specifies the legal number intervals for an input field
+ value:	
+        Specifies the default value for an input field
+
+The readonly Attribute:
+    1) The input readonly attribute specifies that an input field is read-only.
+    2) A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).
+    3) The value of a read-only input field will be sent when submitting the form!
+    
+        <input type="text" id="fname" name="fname" value="John" readonly><br>
+
+The disabled Attribute:
+    1) The input disabled attribute specifies that an input field should be disabled.
+    2) A disabled input field is unusable and un-clickable.
+    3) The value of a disabled input field will not be sent when submitting the form!
+
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+
+The size Attribute: 
+    1) The input size attribute specifies the visible width, in characters, of an input field.
+    2) The default value for size is 20.
+    3) Note: The size attribute works with the following input types: text, search, tel, url, email, and password.
+
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <input type="text" id="pin" name="pin" size="4"><br><br>
+
+The min and max Attributes: 
+    1) The input min and max attributes specify the minimum and maximum values for an input field.
+    2) The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.
+    3) Tip: Use the max and min attributes together to create a range of legal values.
+
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+The multiple Attribute: 
+    1) The input multiple attribute specifies that the user is allowed to enter more than one value in an input field.
+    2) The multiple attribute works with the following input types: email, and file.
+
+         <input type="file" id="files" name="files" multiple>
+
+The required Attribute: 
+    1) The input required attribute specifies that an input field must be filled out before submitting the form.
+    2) The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.
+
+         <input type="text" id="username" name="username" required>
+
+The autofocus Attribute: 
+    1) The autofocus Attribute.
+    2) The input autofocus attribute specifies that an input field should automatically get focus when the page loads.
+
+        <input type="text" id="fname" name="fname" autofocus><br>
+

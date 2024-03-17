@@ -1,0 +1,86 @@
+HTML:
+<h1 id="idSelection">ID Selection</h1>
+
+<h1 class="singleClassSelection">Single Class Selection</h1>
+
+<h1 class="multipleClassSelection a b">Multiple Class Selection</h1>
+
+<h1 class="a">Separate Class</h1>
+<h1 class="b">Separate Class</h1>
+
+<div id="iDNestedSelection">
+    <h1>Nested inside a #id Div</h1>
+</div>
+
+<div class="classNestedSelection">
+    <h1>Nested inside a .class Div</h1>
+</div>
+
+<div class="parallelDivA">
+    <h2>Parallel Div A</h2>
+</div>
+
+<div class="parallelDivB">
+    <h2>Parallel Div B</h2>
+</div>
+
+STYLE:
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+#idSelection {
+  background: red;
+  margin: 0;
+}
+
+.singleClassSelection {
+  background-color: orange;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.multipleClassSelection {
+  background-color: green;
+}
+
+.multipleClassSelection.a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.a {
+  font-family: Verdana;
+}
+
+.multipleClassSelection.a.b {
+  text-decoration: line-through;
+}
+
+.b {
+  text-decoration: underline;
+}
+
+#iDNestedSelection h1 {
+  color: pink;
+}
+
+.classNestedSelection h1 {
+  color: blue;
+}
+
+.parallelDivA,
+.parallelDivB {
+  background: tomato;
+}
+
+.parallelDivA,
+.parallelDivB h2 {
+  color: white;
+}

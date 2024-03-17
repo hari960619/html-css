@@ -1,0 +1,46 @@
+<h1 id="a">RGB - RED GREEN BLUE <br> ( Colors vary from 0 to 255 )</h1>
+<h1 id="b">RGBA - RED GREEN BLUE ALPHA <br> (Alpha varies from 0 to 1)</h1>
+
+<h1 id="c">HSL - HUE SATURATION LIGHTNESS <br> ( Hue vary from 0 to 100 )</h1>
+<h1 id="d">HSL - HUE SATURATION LIGHTNESS <br> ( Saturation and Lightness vary from 0% to 100% )</h1>
+
+<h1 id="e">#000000 - RED GREEN BLUE <br> ( Varies from 00 to ff )</h1>
+<h1 id="f">#ffffff - RED GREEN BLUE <br> ( Varies from 00 to ff )</h1>
+
+* {
+  font-family: monospace;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#a {
+  color: whitesmoke;
+  background-color: rgb(16, 17, 16);
+}
+
+#b {
+  background-color: rgb(16, 17, 16, 0.5);
+}
+
+#c {
+  background-color: hsl(25, 54%, 46%);
+}
+
+#d {
+  background-color: hsl(1, 54%, 46%);
+  color: wheat;
+}
+
+#e {
+  background-color: #001122;
+  color: azure;
+}
+
+#f {
+  background-color: #ffee00;
+}
+
+h1 {
+  margin: 10px 0;
+}

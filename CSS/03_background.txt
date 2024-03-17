@@ -1,0 +1,25 @@
+<div id="bgImg">
+    <h1>lorem100</h1>
+</div>
+
+#bgImg {
+  width: 100%;
+  height: 50vh;
+  color: burlywood;
+  background-color: rgba(39, 41, 40, 0.9);
+  background: url("./Images/Wallpaper03.jpg");
+
+  background-repeat: no-repeat;
+
+  background-position: right;
+  background-position: left;
+  background-position: left top;
+  background-position: right bottom;
+  background-position: center;
+
+  background-attachment: scroll;
+  background-attachment: fixed;
+
+  background-size: contain;
+  background-size: cover;
+}

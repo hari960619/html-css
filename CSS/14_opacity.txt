@@ -1,0 +1,29 @@
+// Opacity on an Image
+
+<img src="./Images/Wallpaper03.jpg">
+
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+// Opacity on an Div
+
+<div id="opa">
+    <h1>Opacity</h1>
+</div>
+
+#opa {
+  height: 100px;
+  width: 100px;
+  background: blue;
+  opacity: 0.5;
+}
+
+#opa:hover {
+  color: wheat;
+  opacity: 1;
+}

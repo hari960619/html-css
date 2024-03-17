@@ -1,0 +1,43 @@
+<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, magni. Labore, autem voluptatum. Eveniet beatae facere unde totam ad vero, dolorem excepturi exercitationem sequi perspiciatis, debitis cumque? Labore consequatur sunt cupiditate totam ex saepe est iusto quis fugiat quibusdam quaerat reprehenderit culpa tempore minus mollitia, harum, veniam a molestiae commodi eaque. Eveniet at aliquam voluptate incidunt voluptas explicabo officiis suscipit dolor, ut accusantium maiores error, eligendi sit sint. Harum, necessitatibus accusantium, nesciunt dolores neque labore ea modi vitae aliquam, error assumenda a veritatis. Aliquid, assumenda ratione consequuntur, deserunt minima obcaecati amet molestiae aspernatur, corporis autem voluptate delectus sunt ut et.</h1>
+
+
+h1 {
+  margin: 15px;
+  padding: 15px;
+
+  text-align: left;
+  text-align: right;
+  text-align: center;
+  text-align: justify;
+
+  text-decoration-line: line-through;
+  text-decoration-line: overline;
+  text-decoration-line: underline;
+
+  text-decoration-color: red;
+
+  text-decoration-style: dotted;
+  text-decoration-style: solid;
+  text-decoration-style: dashed;
+
+  text-decoration-thickness: 2.5px;
+
+  text-transform: lowercase;
+  text-transform: uppercase;
+  text-transform: capitalize;
+
+  /* It gives space in the beginning */
+  text-indent: 100px;
+
+  letter-spacing: 2.5px;
+
+  line-height: 1.25;
+
+  word-spacing: 15px;
+
+  white-space: nowrap;
+  white-space: wrap;
+
+  /* X Y Blur Color */
+  text-shadow: 1px 1.5px 2.5px red;
+}

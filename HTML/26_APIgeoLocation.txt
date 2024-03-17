@@ -1,0 +1,22 @@
+<button id="geoLocation">Click for Coordinates</button>
+<p id="valueBox"></p>
+
+
+let btn = document.getElementById("geoLocation");
+let displayValue = document.getElementById("valueBox");
+
+btn.addEventListener("click", () => {
+
+    if(navigator.geoLocation){
+        navigator.geolocation.getCurrentPosition((position) => {
+        console.log("latitude", position.coords.latitude)
+        console.log("longitude", position.coords.longitude)
+
+        displayValue.innerHTML = `Latitude:${position.coords.latitude}  <br>
+                                    Longitude:${position.coords.longitude}`
+        })
+    }else{
+        displayValue.innerHTML = `Geolocation is not supported by this browser.`
+    }
+
+})

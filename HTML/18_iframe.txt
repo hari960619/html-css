@@ -1,0 +1,13 @@
+ iframe {
+        border: 5px solid red;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+<iframe width="400" height="250" src="https://www.youtube.com/embed/GmOgHNtt-bc"
+        title="Prepare for Success"></iframe>
+
+The HTML <iframe> tag specifies an inline frame
+The src attribute defines the URL of the page to embed
+Always include a title attribute (for screen readers)
+The height and width attributes specify the size of the iframe

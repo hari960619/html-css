@@ -1,0 +1,65 @@
+matrix(n,n,n,n,n,n):	
+    Defines a 2D transformation, using a matrix of six values
+
+translate(x,y):	
+    Defines a 2D translation, moving the element along the X- and the Y-axis
+
+translateX(n):	
+    Defines a 2D translation, moving the element along the X-axis
+
+translateY(n):	
+    Defines a 2D translation, moving the element along the Y-axis
+
+scale(x,y):	
+    Defines a 2D scale transformation, changing the elements width and height
+
+scaleX(n):	
+    Defines a 2D scale transformation, changing the element's width
+
+scaleY(n):	
+    Defines a 2D scale transformation, changing the element's height
+
+rotate(angle):	
+    Defines a 2D rotation, the angle is specified in the parameter
+
+skew(x-angle,y-angle):	
+    Defines a 2D skew transformation along the X- and the Y-axis
+
+skewX(angle):	
+    Defines a 2D skew transformation along the X-axis
+
+skewY(angle):	
+    Defines a 2D skew transformation along the Y-axis
+
+
+<h6>Translate moves the elements from one position to another.</h6>
+    <h1 id="one">translateX</h1>
+    <h1 id="two">translateY</h1>
+    <h1 id="three">translate X & Y</h1>
+    <br>
+    <h1 id="four">scale</h1>
+    <h1 id="five">scaleX</h1>
+    <h1 id="six">scaleY</h1>
+
+#one:hover {
+  transform: translateX(100px);
+}
+
+#two:hover {
+  transform: translateY(100px);
+}
+
+#three:hover {
+  transform: translate(100px, 100px);
+}
+
+#four:hover {
+  transform: scale(0.5);
+}
+#five:hover {
+  transform: scaleX(1.5);
+}
+
+#six:hover {
+  transform: scaleY(1.5);
+}

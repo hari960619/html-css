@@ -1,0 +1,101 @@
+<div id="staticDiv">
+        <h1>I Belong to "staticDiv"</h1>
+        <h2>"static" position is the default position, </h2>
+        <h2>there is no change of position in it.</h2>
+</div>
+<div id="relativeDiv">
+        <h1>I Belong to "relativeDiv"</h1>
+        <h2>"relative" position gives importance to its initial position</h2>
+        <h2> Any top, right, left, bottom values are considered from its initial position.</h2>
+        <h2>It is being relative to itself.</h2>
+</div>
+<div id="fixedDiv">
+        <h1>I Belong to "fixedDiv"</h1>
+        <h2>It is relative to viewport</h2>
+        <h2>Even If we scroll it will still stay there UNAFFECTED!!!</h2>
+        <h2>The width of the element changes to fit-content as soon as position gets applied.</h2>
+</div>
+<div id="stickyDiv">
+        <h1>I Belong to "stickyDiv"</h1>
+        <h2>This element stays in it position until its position reaches the top of the viewport.</h2>
+        <h2>It depends on the user scroll position</h2>
+        <h2>Once the position is set, provide the position values.</h2>
+        <h2>As soon as the scroll position reaches the element it will stick to its position.</h2>
+</div>
+<div id="absoluteDiv">
+        <h1>I Belong to "absoluteDiv"</h1>
+        <h2>The first criteria for absolute to work is have an immediate relatively position ancestor.</h2>
+        <h2>If it does have one then it will consider the body as its ancestor.</h2>
+        <h2>Now this element will be made "relative" so that its child can use the "absolute" property.</h2>
+        <h2>Later well see the changes by removing the "relative" property.</h2>
+        <div id="absoluteDivInside">
+            <h3>I'm inside absolute Div</h3>
+            <h3>The width of the element changes to fit-content as soon as position gets applied.</h3>
+        </div>
+</div>
+
+h1 {
+  line-height: 3.5;
+}
+
+h2 {
+  line-height: 5;
+}
+
+#staticDiv {
+  background-color: red;
+  color: rgb(249, 249, 249);
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+#relativeDiv {
+  background-color: green;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  position: relative;
+  left: 100px;
+  top: 10px;
+}
+
+#fixedDiv {
+  background-color: blue;
+  color: wheat;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  position: fixed;
+  top: 45px;
+  left: -100px;
+}
+
+#stickyDiv {
+  background-color: orange;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  position: sticky;
+  top: 5px;
+}
+
+#absoluteDiv {
+  background-color: grey;
+  color: wheat;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  /* As soon as this relative gets removed the body is considered its relative by its child */
+  position: relative;
+}
+
+#absoluteDivInside {
+  background-color: yellow;
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}

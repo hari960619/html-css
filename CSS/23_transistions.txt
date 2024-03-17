@@ -1,0 +1,29 @@
+transition:	
+    A shorthand property for setting the four transition properties into a single property.
+transition-delay:	
+    Specifies a delay (in seconds) for the transition effect.
+transition-duration:	
+    Specifies how many seconds or milliseconds a transition effect takes to complete.
+transition-property:	
+    Specifies the name of the CSS property the transition effect is for.
+transition-timing-function:	
+    Specifies the speed curve of the transition effect.
+
+HTML
+<h1 id="one">transition</h1>
+
+CSS
+#one {
+  /* transition-delay: 1s;
+  transition-duration: 1s;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out; */
+
+  /* shorthand */
+  /* transition: transition-property transition-duration transition-timing-function transition-delay */
+  transition: background 2s linear 0.5s;
+}
+
+#one:hover {
+  background-color: red;
+}

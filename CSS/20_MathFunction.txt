@@ -1,0 +1,41 @@
+calc():	Allows you to perform calculations to determine CSS property values
+max():	Uses the largest value, from a comma-separated list of values, as the property value
+min():	Uses the smallest value, from a comma-separated list of values, as the property value
+
+<div id="calc">
+    <h1>calc() usage</h1>
+</div>
+<div id="min">
+    <h1>min() usage</h1>
+</div>
+<div id="max">
+    <h1>max() usage</h1>
+</div>
+
+#calc {
+  text-align: center;
+  height: 250px;
+  background: red;
+  /* Spaces in between play important role */
+  width: calc(100% - 100px);
+  margin: 5px auto;
+}
+
+#min {
+  text-align: center;
+  height: 250px;
+  background: green;
+  /* Spaces in between play important role */
+  width: min(350px, 50%);
+  margin: 5px auto;
+}
+
+#max {
+  text-align: center;
+  height: 250px;
+  background: blue;
+  /* Spaces in between play important role */
+  width: max(350px, 50%);
+  margin: 5px auto;
+  color: white;
+}

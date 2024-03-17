@@ -1,0 +1,24 @@
+/* Mobile Devices (up to 767px) */
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+}
+
+/* Tablets in Portrait mode (768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for tablets in portrait mode */
+}
+
+/* Tablets in Landscape mode (992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for tablets in landscape mode */
+}
+
+/* Laptops (1200px to 1439px) */
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+    /* Styles for laptops */
+}
+
+/* Larger Screens (1440px and above) */
+@media only screen and (min-width: 1440px) {
+    /* Styles for larger screens */
+}
